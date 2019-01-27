@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Department Registration</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="/mainpage">CGPA CALCULATOR</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="/mainpage">Home</a></li>
+					
+					<li><a href="/subject_register">Subject Registration</a></li>
+					<li><a href="/field_register">Department Registration</a></li>
+					<li><a href="/add_results">Add Results</a></li>
+					<li><a href="/new_admin">New Admin</a></li>
+					<li><a href="/">Log Out</a></li>
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Department Registration</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+
+					<!-- Elements -->
+						<div class="row">
+							
+							<div class="col-12 col-12-medium">
+
+                                <!-- Form -->
+                                    <h3><b><font style="color:rgb(95, 10, 10)">Add New Department</font></b></h3>
+									
+									<form method="get" action="/field_register/add">
+										<div class="row gtr-uniform">
+											
+											<div class="col-8 col-12-xsmall">
+                                                <table style="border:3px solid black; border-collapse: collapse;">
+                                                    <tr>
+                                                        <td>Department Name</td>
+                                                        <td><input type="text" name="name" id="name" value=""/></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Core subjects credits total</td>
+                                                        <td><input type="number" name="core" id="core" value=""/></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Technical subjects credits total</td>
+                                                        <td><input type="number" name="tech" id="tech" value=""/></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>General subjects credits total</td>
+                                                        <td><input type="number" name="gen" id="gen" value=""/></td>
+                                                    </tr>
+                                                </table>
+											
+											
+											
+											<!-- Break -->
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="Submit Form" class="primary" /></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+        <footer id="footer">
+				
+            <div class="copyright">
+                &copy; Software Engineering project 2018.
+            </div>
+            
+        </footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

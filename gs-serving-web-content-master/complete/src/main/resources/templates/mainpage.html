@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="/mainpage">CGPA CALCULATOR</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="/mainpage">Home</a></li>
+					
+					<li><a href="/subject_register">Subject Registration</a></li>
+					<li><a href="/field_register">Department Registration</a></li>
+					<li><a href="/add_results">Add Results</a></li>
+					<li><a href="/new_admin">New Admin</a></li>
+					<li><a href="/">Log Out</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1>CGPA CALCULATOR</h1>
+					<p><font style="color:darkcyan">Calculate your current GPA and Predict to increase it</font></p>
+				</div>
+				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
+			</section>
+
+		<!-- Highlights -->
+			<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						
+						<img src="images/man.jpg" alt="Photo" style="width:128px;height:158px;">
+						<h2 id="header_name"><b>Kasun Amarasinghe (E/13/010)</b></h2>
+						Department : <h4> <b>Computer Engineering</b></h4>
+						<p><b>Current GPA : 2.70</b></p>
+					</header>
+					<div class="row gtr-uniform">
+						<h3><b><font style="color:rgb(95, 10, 10)">Current Results</font></b></h3>
+						<div class="col-12 col-12-xsmall">
+							<table style="border:3px solid black; border-collapse: collapse;">
+								<tr>
+									<td>
+										<table class="table-bordered">
+											<tr>
+												<th colspan="2"><center><b><font style="color:firebrick">Core Subjects</font></b></center></th>
+											</tr>
+											<tr>
+												<td>Programming Methodology</td>
+												<td>A</td>
+											</tr>
+											<tr>
+												<td>Computer Networks 1</td>
+												<td>B</td>
+											</tr>
+											<tr>
+												<td>Computer Architecture</td>
+												<td>C</td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<table class="table-bordered">
+											<tr>
+												<th colspan="2"><center><b><font style="color:firebrick">Technical Subjects</font></b></center></th>
+											</tr>
+											<tr>
+												<td>Machine Learning</td>
+												<td>B</td>
+											</tr>
+											<tr>
+												<td>Software Architecture</td>
+												<td>A</td>
+											</tr>
+											
+										</table>
+									</td>
+									<td>
+										<table class="table-bordered">
+											<tr>
+												<th colspan="2"><center><b><font style="color:firebrick">Genaral Subjects</font></b></center></th>
+											</tr>
+											<tr>
+												<td>Digital Art</td>
+												<td>C</td>
+											</tr>
+											<tr>
+												<td>Engineering Society</td>
+												<td>B</td>
+											</tr>
+											
+										</table>
+									</td>
+								</tr>
+								
+							</table>
+							
+						</div>
+						
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+				
+			<div class="copyright">
+				&copy; Software Engineering project 2018.
+			</div>
+			
+		</footer>
+		
+		
+		<script src="assets/js/jquery.min.js"></script>
+		<script type="text/javascript">
+				
+				const url = 'http://localhost:8080/student_data/student';
+	
+				// Populate dropdown with list of provinces
+				$.getJSON(url, function (data) {
+					
+					  $b = $('h2').find('b')
+					    $('h2').text(data.name + " (" + data.reg_no + ")");
+				  
+				});
+				
+				const url1 = 'http://localhost:8080/student_data/department';
+				
+				// Populate dropdown with list of provinces
+				$.getJSON(url1, function (data) {
+					
+					  $b = $('h4').find('b')
+					    $('h4').text(data.name);
+				  
+				});
+			</script>
+
+		<!-- Scripts -->
+			
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
